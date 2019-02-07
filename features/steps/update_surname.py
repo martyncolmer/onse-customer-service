@@ -1,3 +1,5 @@
+from behave import given
+
 @given('I update the surname for customer "{customer_id}" to "{surname}"')
 def update_surname(context, customer_id, surname):
     response = context.web_client.post(
